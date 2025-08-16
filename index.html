@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raghavendra N Dodamani – Portfolio</title>
+  <meta name="description" content="Engineering graduate skilled in embedded systems, C/C++, QA and technical documentation." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121823;
+      --muted: #9fb0c3;
+      --text: #e9f0f8;
+      --accent: #67b0ff;
+      --accent-2: #7ef6d7;
+      --ring: rgba(103,176,255,.5);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(11,15,20,.6); border-bottom: 1px solid rgba(255,255,255,.06); z-index: 10; }
+    nav { display: flex; gap: 18px; align-items: center; justify-content: space-between; }
+    nav .brand { font-weight: 700; letter-spacing: .3px; }
+    nav .links a { padding: 8px 10px; border-radius: 10px; }
+    nav .links a:hover { background: rgba(255,255,255,.06); text-decoration: none; }
+
+    .hero { display: grid; gap: 12px; padding: 48px 0 28px; }
+    .hero h1 { font-size: 38px; line-height: 1.15; margin: 0; }
+    .subtitle { color: var(--muted); margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .tag { background: linear-gradient(135deg, rgba(103,176,255,.15), rgba(126,246,215,.15)); border: 1px solid rgba(255,255,255,.08); padding: 6px 10px; border-radius: 999px; font-size: 13px; color: #dbe8f5; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+    .btn { display: inline-block; padding: 10px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); background: var(--card); color: var(--text); text-decoration: none; font-weight: 600; }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f14; border: none; }
+    .btn:hover { filter: brightness(1.05); text-decoration: none; }
+
+    section { padding: 22px 0; }
+    h2 { margin: 8px 0 10px; font-size: 22px; letter-spacing: .2px; }
+
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(12, 1fr); }
+    .card { grid-column: span 12; background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0 0 10px; color: var(--muted); }
+    .meta { font-size: 13px; color: #c9d7e6; }
+    .list { margin: 8px 0 0 18px; }
+    .list li { margin-bottom: 6px; }
+
+    @media (min-width: 720px) {
+      .card.span-6 { grid-column: span 6; }
+      .card.span-4 { grid-column: span 4; }
+    }
+
+    footer { border-top: 1px solid rgba(255,255,255,.06); margin-top: 28px; padding: 20px 0; color: var(--muted); font-size: 14px; }
+    .note { font-size: 13px; color: var(--muted); margin-top: 6px; }
+    details { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: 12px; padding: 10px 12px; }
+    details summary { cursor: pointer; font-weight: 600; }
+    .pill { display:inline-block; padding: 3px 8px; border-radius: 999px; background: rgba(255,255,255,.08); margin-right:6px; font-size:12px }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="brand">Raghavendra N Dodamani</div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#bugs">QA Samples</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <h1>Engineering Graduate · Embedded Systems & QA</h1>
+      <p class="subtitle">Detail-oriented engineer trained in embedded systems and C/C++, with strength in logical analysis, debugging, and clear technical documentation.</p>
+      <div class="tags" aria-label="Key highlights">
+        <span class="tag">Embedded Systems</span>
+        <span class="tag">C / C++</span>
+        <span class="tag">Microcontrollers</span>
+        <span class="tag">Manual QA</span>
+        <span class="tag">Bug Reporting (Jira/Trello)</span>
+        <span class="tag">Technical Writing</span>
+      </div>
+      <div class="cta">
+        <!-- Replace the href with your actual resume file name once uploaded -->
+        <a class="btn primary" href="Raghavendra_Resume.pdf" download>Download Resume</a>
+        <a class="btn" href="mailto:dnraghav10@gmail.com" aria-label="Email">Email</a>
+        <a class="btn" href="https://linkedin.com/in/raghavendra-n-d" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="note">Belagavi, Karnataka · Open to relocation · Available for full-time roles</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card span-6">
+          <h3>Programming & Systems</h3>
+          <p>
+            <span class="pill">C</span>
+            <span class="pill">C++</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Linux Internals</span>
+            <span class="pill">Microcontrollers</span>
+          </p>
+        </div>
+        <div class="card span-6">
+          <h3>Tools</h3>
+          <p>
+            <span class="pill">PICSIMLAB</span>
+            <span class="pill">MPLAB IPE & IDE</span>
+            <span class="pill">Microsoft Visual Studio</span>
+            <span class="pill">Jira</span>
+            <span class="pill">Trello</span>
+            <span class="pill">Adobe Premiere Pro</span>
+            <span class="pill">Microsoft Office</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card span-6">
+          <h3>Data Hiding using Steganography</h3>
+          <p>Implemented a C-based algorithm for secure information storage using bitwise operations and file manipulation.</p>
+          <ul class="list">
+            <li>Tech: C, File I/O, Bitwise Ops</li>
+            <li>Outcome: Functional CLI tool to encode/decode data into image files.</li>
+          </ul>
+        </article>
+        <article class="card span-6">
+          <h3>QA Workflow Simulation (Jira/Trello)</h3>
+          <p>Simulated industry bug lifecycle with severity, repro steps, and resolution tracking across a sample backlog.</p>
+          <ul class="list">
+            <li>Artifacts: Sample bug tickets, test cases, triage notes</li>
+            <li>Focus: Clarity, reproduction rate, proper severity/priority</li>
+          </ul>
+        </article>
+        <article class="card span-12">
+          <h3>MWCNT Metal Matrix Composite – Research</h3>
+          <p>Led a team of four comparing mechanical properties pre/post MDF processing; published in ASET 2023 proceedings.</p>
+          <ul class="list">
+            <li>Roles: Team lead, test planning, data analysis</li>
+            <li>Outcome: Paper accepted; improved documentation & collaboration skills</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="bugs">
+      <h2>QA Samples (Bug Reports)</h2>
+      <div class="grid">
+        <article class="card span-12">
+          <h3>Sample Bug – Invisible Collision in 3D World (Generic)</h3>
+          <p class="meta">Category: World/Navigation · Severity: Medium · Repro: 4/5</p>
+          <details>
+            <summary>View Repro Steps & Expected/Actual</summary>
+            <ul class="list">
+              <li><strong>Environment:</strong> Windows 10, Controller + Keyboard; Retail build v1.x</li>
+              <li><strong>Steps:</strong> Navigate to town construction zone → Jump toward scaffold opening → Move forward at a diagonal angle.</li>
+              <li><strong>Expected:</strong> Player passes through opening without obstruction.</li>
+              <li><strong>Actual:</strong> Invisible collision stops movement; camera jitters; audio continues.</li>
+              <li><strong>Notes:</strong> Occurs near object seam; likely misaligned collision mesh.</li>
+              <li><strong>Attachments:</strong> (Add GIF/short clip link here)</li>
+            </ul>
+          </details>
+          <p class="note">Tip: Replace this with your own generalized reports; avoid using game/IP names directly in public portfolios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:dnraghav10@gmail.com">dnraghav10@gmail.com</a> · LinkedIn: <a href="https://linkedin.com/in/raghavendra-n-d" target="_blank" rel="noopener">/in/raghavendra-n-d</a> · Location: Belagavi, Karnataka</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="y"></span> Raghavendra N Dodamani · Built with HTML/CSS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
